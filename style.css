@@ -1,15 +1,14 @@
-/* ====== BASE ====== */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;600&display=swap');
 
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  background: #0d1117; /* GitHub dark background */
-  color: #e6edf3; /* Soft white text */
+  background: #0d1117;
+  color: #e6edf3;
 }
 
-/* ====== HEADER ====== */
+/* ===== HEADER ===== */
 header {
   text-align: center;
   padding: 100px 20px 60px;
@@ -19,20 +18,43 @@ header {
 
 h1 {
   font-size: 2.8rem;
-  margin-bottom: 0.3em;
   color: #f0f6fc;
-  letter-spacing: 0.5px;
   text-shadow: 0 0 8px rgba(0, 255, 170, 0.2);
 }
 
 header p {
   font-size: 1.1rem;
   color: #8b949e;
+  line-height: 1.6;
 }
 
-/* ====== SECTIONS ====== */
+/* ===== SOCIAL ICONS ===== */
+.social-header {
+  margin-top: 15px;
+}
+
+.social-header a {
+  color: #e6edf3;
+  margin: 0 12px;
+  font-size: 1.6rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-header a:hover {
+  transform: translateY(-3px);
+}
+
+.social-header a:first-child:hover {
+  color: #0077b5;
+}
+
+.social-header a:last-child:hover {
+  color: #e1306c;
+}
+
+/* ===== SECTIONS ===== */
 section {
-  max-width: 800px;
+  max-width: 900px;
   margin: 60px auto;
   padding: 0 20px;
 }
@@ -40,37 +62,42 @@ section {
 h2 {
   font-size: 1.6rem;
   color: #f0f6fc;
-  border-left: 4px solid #9b6b43; /* vintage brown accent */
+  border-left: 4px solid #9b6b43;
   padding-left: 10px;
   font-family: 'Fira Code', monospace;
+  margin-bottom: 20px;
 }
 
-p {
+p, li {
   font-size: 1rem;
   line-height: 1.6;
   color: #c9d1d9;
 }
 
-/* ====== PROJECT CARDS ====== */
-.project-card {
+/* ===== CARDS ===== */
+.project-card, .experience-card {
   background: #161b22;
   border: 1px solid #30363d;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(155, 107, 67, 0.05);
-  padding: 20px;
-  margin-top: 20px;
-  transition: all 0.2s ease;
-  font-family: 'Fira Code', monospace;
-  color: #e6edf3;
+  padding: 25px;
+  margin-top: 25px;
+  transition: all 0.25s ease;
 }
 
-.project-card:hover {
+.project-card:hover, .experience-card:hover {
   transform: translateY(-4px);
   border-color: #9b6b43;
   box-shadow: 0 0 12px rgba(155, 107, 67, 0.2);
 }
 
-/* ====== FOOTER ====== */
+h3 {
+  margin-top: 0;
+  color: #f0f6fc;
+  font-family: 'Fira Code', monospace;
+}
+
+/* ===== FOOTER ===== */
 footer {
   text-align: center;
   padding: 40px 20px;
@@ -81,48 +108,9 @@ footer {
   margin-top: 100px;
 }
 
-footer .social-links {
-  margin-top: 10px;
-}
-
-footer .social-links a {
-  color: #e6edf3;
-  margin: 0 10px;
-  font-size: 1.4rem;
-  transition: color 0.3s ease, transform 0.2s ease;
-}
-
-footer .social-links a:hover {
-  color: #0077b5; /* LinkedIn blue */
-  transform: translateY(-3px);
-}
-
-footer .social-links a:nth-child(2):hover {
-  color: #e1306c; /* Instagram pink */
-}
-
-/* ====== CYBER DETAILS ====== */
-.project-card::before {
-  content: ">";
-  color: #9b6b43;
-  margin-right: 8px;
-}
-
-h2::before {
-  content: "// ";
-  color: #9b6b43;
-  opacity: 0.8;
-}
-
-/* ====== RESPONSIVE ====== */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {
-  h1 {
-    font-size: 2.2rem;
-  }
-  header p {
-    font-size: 1rem;
-  }
-  section {
-    margin: 40px auto;
-  }
+  h1 { font-size: 2.2rem; }
+  header p { font-size: 1rem; }
+  section { margin: 40px auto; }
 }

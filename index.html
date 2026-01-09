@@ -10,19 +10,47 @@
 </head>
 
 <body>
-  <header>
-    <h1>Hi, I'm Apoorva 👋</h1>
-    <p>Computer Engineering (4th Year) Student at the University of Guelph<br>
-      Cybersecurity Co-op Student at CCS Guelph</p>
+  <!-- Navigation Bar -->
+  <nav class="main-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">AT</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Social icons under name -->
-    <div class="social-header">
-      <a href="https://www.linkedin.com/in/apoorva-thirumurugan" target="_blank" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://www.instagram.com/YOUR-INSTAGRAM-USERNAME" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
+  <!-- Animated Cyber Banner -->
+  <header class="cyber-banner">
+    <div class="cyber-grid"></div>
+    <div class="cyber-lines">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+    </div>
+    <div class="cyber-particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+    <div class="banner-content">
+      <h1 class="cyber-title">
+        <span class="glitch" data-text="Hi, I'm Apoorva">Hi, I'm Apoorva</span>
+        <span class="cursor-blink">|</span>
+      </h1>
+      <p class="cyber-subtitle">
+        <span class="typewriter">Computer Engineering (4th Year) Student at the University of Guelph</span><br>
+        <span class="typewriter-delay">Cybersecurity Co-op Student at CCS Guelph</span>
+      </p>
+      <div class="social-header">
+        <a href="https://www.linkedin.com/in/apoorva-thirumurugan" target="_blank" aria-label="LinkedIn"
+          class="social-link">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
     </div>
   </header>
 
@@ -64,57 +92,26 @@
     </div>
   </section>
 
+  <!-- Projects Button Section -->
+  <section class="cta-section">
+    <div class="cta-card">
+      <h2><i class="fas fa-code"></i> Explore My Projects</h2>
+      <p>Check out my technical projects, from operating systems development to CAD design</p>
+      <a href="projects.html" class="cta-button">
+        View All Projects <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
   <!-- Tab Navigation -->
   <div class="tabs-container">
     <div class="tabs-nav">
-      <button class="tab-btn active" data-tab="projects">
-        <i class="fas fa-code"></i> Projects
-      </button>
-      <button class="tab-btn" data-tab="extracurriculars">
+      <button class="tab-btn active" data-tab="extracurriculars">
         <i class="fas fa-users"></i> Extra Curriculars
       </button>
       <button class="tab-btn" data-tab="certifications">
         <i class="fas fa-certificate"></i> Certifications
       </button>
-    </div>
-
-    <!-- Projects Tab -->
-    <div class="tab-content active" id="projects-tab">
-      <div class="project-card">
-        <div class="project-header">
-          <h3><i class="fas fa-terminal"></i> Operating Systems Development Projects</h3>
-          <span class="project-tag">Systems Programming</span>
-        </div>
-        <ul>
-          <li>Developed a threaded spell-checker program with an optimized text-based interface.</li>
-          <li>Built C programs for parallel computation using processes, signal handling, and histogram calculations.
-          </li>
-          <li>Used <strong>Docker</strong> to containerize applications for consistent deployment environments.</li>
-        </ul>
-        <div class="tech-stack">
-          <span class="tech-item">C</span>
-          <span class="tech-item">Docker</span>
-          <span class="tech-item">Linux</span>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-header">
-          <h3><i class="fas fa-cube"></i> CAD & Mechanical Design – Robotic Arm and Rocket Toy</h3>
-          <span class="project-tag">Mechanical Design</span>
-        </div>
-        <ul>
-          <li>Created detailed 3D CAD models and assemblies in <strong>SolidWorks</strong>.</li>
-          <li>Collaborated in a multidisciplinary team to design, prototype, and market a rocket projectile toy with
-            full documentation.</li>
-          <li>Enhanced design and problem-solving skills through iterative mechanical modeling.</li>
-        </ul>
-        <div class="tech-stack">
-          <span class="tech-item">SolidWorks</span>
-          <span class="tech-item">CAD</span>
-          <span class="tech-item">3D Modeling</span>
-        </div>
-      </div>
     </div>
 
     <!-- Extra Curriculars Tab -->

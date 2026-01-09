@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,12 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
   <header>
     <h1>Hi, I'm Apoorva 👋</h1>
     <p>Computer Engineering (4th Year) Student at the University of Guelph<br>
-       Cybersecurity Co-op Student at CCS Guelph</p>
+      Cybersecurity Co-op Student at CCS Guelph</p>
 
     <!-- Social icons under name -->
     <div class="social-header">
@@ -26,7 +28,9 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I’m passionate about blending engineering, cybersecurity, and creativity to design secure, intelligent systems that make a real impact. My work spans from automating SOC workflows to developing embedded systems and creating accessible security education resources.</p>
+    <p>I'm passionate about blending engineering, cybersecurity, and creativity to design secure, intelligent systems
+      that make a real impact. My work spans from automating SOC workflows to developing embedded systems and creating
+      accessible security education resources.</p>
   </section>
 
   <section id="experience">
@@ -36,11 +40,16 @@
       <h3>Information Security Co-op – Computing & Communications Services (CCS), University of Guelph</h3>
       <p><strong>Jan 2025 – Present | Guelph, ON</strong></p>
       <ul>
-        <li>Triaged and resolved information security tickets and incidents involving account compromises, phishing, and other cybersecurity threats.</li>
-        <li>Developed and deployed <strong>Power Automate</strong> solutions to automate SOC processes, demonstrated automation capabilities to SOC and IAM teams.</li>
-        <li>Monitored and analyzed security service logs for anomalies and risks, improving incident detection and response workflows.</li>
-        <li>Created a <strong>PHP script</strong> to extend the Threat Intelligence Feed Editor (TIFE), increasing efficiency and accuracy of threat data management.</li>
-        <li>Authored monthly cybersecurity blog articles, translating complex technical topics into accessible materials for the university community.</li>
+        <li>Triaged and resolved information security tickets and incidents involving account compromises, phishing, and
+          other cybersecurity threats.</li>
+        <li>Developed and deployed <strong>Power Automate</strong> solutions to automate SOC processes, demonstrated
+          automation capabilities to SOC and IAM teams.</li>
+        <li>Monitored and analyzed security service logs for anomalies and risks, improving incident detection and
+          response workflows.</li>
+        <li>Created a <strong>PHP script</strong> to extend the Threat Intelligence Feed Editor (TIFE), increasing
+          efficiency and accuracy of threat data management.</li>
+        <li>Authored monthly cybersecurity blog articles, translating complex technical topics into accessible materials
+          for the university community.</li>
       </ul>
     </div>
 
@@ -55,38 +64,132 @@
     </div>
   </section>
 
-  <section id="projects">
-    <h2>Relevant Projects</h2>
-
-    <div class="project-card">
-      <h3>Operating Systems Development Projects</h3>
-      <ul>
-        <li>Developed a threaded spell-checker program with an optimized text-based interface.</li>
-        <li>Built C programs for parallel computation using processes, signal handling, and histogram calculations.</li>
-        <li>Used <strong>Docker</strong> to containerize applications for consistent deployment environments.</li>
-      </ul>
+  <!-- Tab Navigation -->
+  <div class="tabs-container">
+    <div class="tabs-nav">
+      <button class="tab-btn active" data-tab="projects">
+        <i class="fas fa-code"></i> Projects
+      </button>
+      <button class="tab-btn" data-tab="extracurriculars">
+        <i class="fas fa-users"></i> Extra Curriculars
+      </button>
+      <button class="tab-btn" data-tab="certifications">
+        <i class="fas fa-certificate"></i> Certifications
+      </button>
     </div>
 
-    <div class="project-card">
-      <h3>CAD & Mechanical Design – Robotic Arm and Rocket Toy</h3>
-      <ul>
-        <li>Created detailed 3D CAD models and assemblies in <strong>SolidWorks</strong>.</li>
-        <li>Collaborated in a multidisciplinary team to design, prototype, and market a rocket projectile toy with full documentation.</li>
-        <li>Enhanced design and problem-solving skills through iterative mechanical modeling.</li>
-      </ul>
+    <!-- Projects Tab -->
+    <div class="tab-content active" id="projects-tab">
+      <div class="project-card">
+        <div class="project-header">
+          <h3><i class="fas fa-terminal"></i> Operating Systems Development Projects</h3>
+          <span class="project-tag">Systems Programming</span>
+        </div>
+        <ul>
+          <li>Developed a threaded spell-checker program with an optimized text-based interface.</li>
+          <li>Built C programs for parallel computation using processes, signal handling, and histogram calculations.
+          </li>
+          <li>Used <strong>Docker</strong> to containerize applications for consistent deployment environments.</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-item">C</span>
+          <span class="tech-item">Docker</span>
+          <span class="tech-item">Linux</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3><i class="fas fa-cube"></i> CAD & Mechanical Design – Robotic Arm and Rocket Toy</h3>
+          <span class="project-tag">Mechanical Design</span>
+        </div>
+        <ul>
+          <li>Created detailed 3D CAD models and assemblies in <strong>SolidWorks</strong>.</li>
+          <li>Collaborated in a multidisciplinary team to design, prototype, and market a rocket projectile toy with
+            full documentation.</li>
+          <li>Enhanced design and problem-solving skills through iterative mechanical modeling.</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-item">SolidWorks</span>
+          <span class="tech-item">CAD</span>
+          <span class="tech-item">3D Modeling</span>
+        </div>
+      </div>
     </div>
-  </section>
 
-  <section id="leadership">
-    <h2>Activities & Leadership</h2>
+    <!-- Extra Curriculars Tab -->
+    <div class="tab-content" id="extracurriculars-tab">
+      <div class="extracurricular-card">
+        <div class="extracurricular-header">
+          <h3><i class="fas fa-briefcase"></i> Vice President Programming</h3>
+          <span class="org-name">Guelph Engineering Professional Development (GEPD)</span>
+        </div>
+        <p>Leading programming initiatives and organizing professional development events for engineering students.</p>
+      </div>
 
-    <ul>
-      <li><strong>Vice President Programming</strong> – Guelph Engineering Professional Development (GEPD)</li>
-      <li><strong>Big Sisters Little Sisters (BSLS) Mentor</strong></li>
-      <li><strong>Women in Science and Engineering (WiSE)</strong></li>
-      <li><strong>Writing Peer Helper</strong> – Student Experience, Peer Helper Program (PHP)</li>
-    </ul>
-  </section>
+      <div class="extracurricular-card">
+        <div class="extracurricular-header">
+          <h3><i class="fas fa-heart"></i> Big Sisters Little Sisters (BSLS) Mentor</h3>
+          <span class="org-name">Mentorship Program</span>
+        </div>
+        <p>Providing guidance and support to younger students through mentorship and community engagement.</p>
+      </div>
+
+      <div class="extracurricular-card">
+        <div class="extracurricular-header">
+          <h3><i class="fas fa-female"></i> Women in Science and Engineering (WiSE)</h3>
+          <span class="org-name">Student Organization</span>
+        </div>
+        <p>Active member promoting diversity and inclusion in STEM fields through events and networking opportunities.
+        </p>
+      </div>
+
+      <div class="extracurricular-card">
+        <div class="extracurricular-header">
+          <h3><i class="fas fa-pen-fancy"></i> Writing Peer Helper</h3>
+          <span class="org-name">Student Experience, Peer Helper Program (PHP)</span>
+        </div>
+        <p>Assisting fellow students with writing skills, providing feedback, and supporting academic success.</p>
+      </div>
+    </div>
+
+    <!-- Certifications Tab -->
+    <div class="tab-content" id="certifications-tab">
+      <div class="certification-card">
+        <div class="cert-header">
+          <div class="cert-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="cert-info">
+            <h3>Cybersecurity Certifications</h3>
+            <p class="cert-issuer">Various Organizations</p>
+            <p class="cert-date">Ongoing</p>
+          </div>
+        </div>
+        <p>Continuously expanding cybersecurity knowledge through professional certifications and training programs.</p>
+      </div>
+
+      <div class="certification-card">
+        <div class="cert-header">
+          <div class="cert-icon">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <div class="cert-info">
+            <h3>Cloud & DevOps Certifications</h3>
+            <p class="cert-issuer">Industry Standard Programs</p>
+            <p class="cert-date">In Progress</p>
+          </div>
+        </div>
+        <p>Building expertise in cloud infrastructure and DevOps practices relevant to modern software development.</p>
+      </div>
+
+      <!-- Add more certifications as you obtain them -->
+      <div class="certification-placeholder">
+        <i class="fas fa-plus-circle"></i>
+        <p>More certifications coming soon!</p>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <p>© 2025 Apoorva Thirumurugan</p>
@@ -94,4 +197,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
